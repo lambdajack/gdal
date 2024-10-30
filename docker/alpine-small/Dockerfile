@@ -159,7 +159,7 @@ RUN if test "${GDAL_VERSION}" = "master"; then \
             /build/usr/share/gdal/gmlas* \
             # netCDF driver
             /build/usr/share/gdal/netcdf_config.xsd \
-       ;do rm $i; done)\
+       ;do rm -f $i; done)\
     && apk del cmake
 
 # Build final image
